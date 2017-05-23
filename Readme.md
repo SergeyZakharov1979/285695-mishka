@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Захаров](https://up.htmlacademy.ru/adaptive/11/user/285695).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Гурьев](https://htmlacademy.ru/profile/danakishi)
 
 ---
 
