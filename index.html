@@ -23,32 +23,32 @@
             </li>
             <li class="main-nav__item">
               <form class="form-search" action="https://echo.htmlacademy.ru/" method="GET">
-                <input class="form-search__field-input" type="search" name="search" placeholder="Поиск по сайту"/>
-                <button class="form-search__btn" type="submit">Отправить</button>
+                <input class="form-search__field-input" type="search" name="search" placeholder="Поиск по сайту">
+                <button class="form-search__btn form-search__btn--loupe" type="submit">Отправить</button>
               </form>
             </li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item"><a class="cart cart--icon" href="#">Корзина: пока пуста</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <section class="promo-block">
-        <div class="promo-block__wrap">
+        <div class="promo-block__wrap promo-block__wrap--bg-img">
           <h2 class="promo-block__title">Милые штуки ручной работы для дома</h2>
             <a href="#" class="catalog-page-link-1">
-              <div class="promo__item promo__item--color-green-1">
+              <div class="promo__item promo__item--color-green-1 promo__item--table-lamp">
                 <h3>Предметы интерьера</h3>
               </div>
             </a>
             <a href="#" class="catalog-page-link-2">
-              <div class="promo__item promo__item--color-green-2">
+              <div class="promo__item promo__item--color-green-2 promo__item--lego-cube">
                 <h3>Детские игрушки</h3>
               </div>
             </a>
         </div>
       </section>
-      <section class="product-of-the-week">
+      <section class="product-of-the-week zigzag-line-bg">
         <div class="product-of-the-week__wrap">
           <span class="product-of-the-week__title">Товар недели</span>
           <h2 class="product-of-the-week__name">Вязаные корзинки</h2>
@@ -76,22 +76,22 @@
         <div class="advantages__wrap">
           <h2 class="advantages__title">Коротко о нас:</h2>
           <ul class="advantages__list">
-            <li class="advantages__list-item advantages__list-item-flower">Экологически чистые материалы</li>
-            <li class="advantages__list-item advantages__list-item-mat">Скандинавский стиль по российской цене</li>
-            <li class="advantages__list-item advantages__list-item-heart">Увеличивает лайки на фотографиях</li>
-            <li class="advantages__list-item advantages__list-item-clew">Связано вручную с любовью и умилением</li>
-            <li class="advantages__list-item advantages__list-item-rocket">Подержка отечественного производителя</li>
-            <li class="advantages__list-item advantages__list-item-gift">Поставляется в подарочной упаковке</li>
+            <li class="advantages__list-item advantages__list-item--flower">Экологически чистые материалы</li>
+            <li class="advantages__list-item advantages__list-item--mat">Скандинавский стиль по российской цене</li>
+            <li class="advantages__list-item advantages__list-item--heart">Увеличивает лайки на фотографиях</li>
+            <li class="advantages__list-item advantages__list-item--clew">Связано вручную с любовью и умилением</li>
+            <li class="advantages__list-item advantages__list-item--rocket">Подержка отечественного производителя</li>
+            <li class="advantages__list-item advantages__list-item--gift">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
       </section>
-      <section class="reviews">
-        <div class="reviews__wrap">
+      <section class="reviews zigzag-line-bg">
+        <div class="reviews__wrap reviews__wrap--bg-img">
           <h2 class="reviews__title">Отзывы</h2>
           <article class="review">
             <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <span class="review__autor"><b>Анастасия Красильникова</b></span><br>
-            <span class="review__autor-email"><a href="mailto:@misssssiskras">@misssssiskras</a></span>
+            <p class="review__autor"><b>Анастасия Красильникова</b></p><br>
+            <p class="review__autor-email"><a href="mailto:@misssssiskras">@misssssiskras</a></p>
           </article>
           <div class="reviews__toggle">
             <span class="reviews__toggle-prev"></span>
@@ -137,7 +137,7 @@
     </footer>
     <div class="modal-cart">
       <h2 class="modal-cart__title"></h2>
-      <span class="modal-cart-question">Выберите размер:</span>
+      <span class="modal-cart__question">Выберите размер:</span>
       <span class="modal-cart__select-size modal-cart__select-size--active"><a href="#">S</a></span>
       <span class="modal-cart__select-size"><a href="#">M</a></span>
       <span class="modal-cart__select-size"><a href="#">L</a></span>
