@@ -1,21 +1,26 @@
 .contacts {
-  font-style: normal;
   font-weight: normal;
   font-size: @font-size-paragraph;
-  font-family: "OpenSans", "Arial", sans-serif;
   line-height: 30px;
   color: @darkgrey-color;
 
-  background-color: @white-color;
   outline: 2px dashed red;
 }
 
 .contacts__title {
-  font-style: normal;
+  padding-top: 20px;
   font-weight: bold;
   font-size: 18px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  line-height: 30px;
   color: @black-color;
 }
 
+.contacts__information {
+  padding-bottom: 20px;
+}
+
+.contacts__email {
+  a {
+    text-decoration: none;
+    color: @darkgrey-color;
+  }
+}

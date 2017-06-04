@@ -1,20 +1,42 @@
 .process-production {
-  font-style: normal;
+  position: relative;
+
   font-weight: normal;
   font-size: 13px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  line-height: 24px;
   color: @darkgrey-color;
 
-  background-color: @white-color;
-  outline: 2px dashed red;
+  outline: 2px dashed green;
+}
+
+.process-production__header {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .process-production__title {
-  font-style: normal;
+  padding-left: 90px;
+
   font-weight: bold;
   font-size: @font-size;
-  font-family: "OpenSans", "Arial", sans-serif;
-  line-height: 24px;
   color: @black-color;
+}
+
+.process-production__descr {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+}
+
+.process-production__descr small {
+  font-size: 13px;
+  line-height: 24px;
+  color: @darkgrey-color;
+}
+
+.process-production__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
