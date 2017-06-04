@@ -7,12 +7,14 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Мишка - интернет-магазин вязаных игрушек</h1><!-- будет скрыт -->
-      <nav class="main-nav  main-nav--nojs">
-        <div class="main-nav__wrap">
-          <a class="page-header__logo" href="index.html">
-            <img src="http://placehold.it/86x35" alt="logo">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Мишка - интернет-магазин вязаных игрушек</h1><!-- будет скрыт -->
+        <div class="page-header__logo">
+          <a href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="logo">
           </a>
+        </div>
+        <nav class="main-nav  main-nav--nojs">
           <span class="main-nav__toggle  main-nav__toggle--open"></span>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -22,27 +24,27 @@
               <a href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <form class="form-search" action="https://echo.htmlacademy.ru/" method="GET">
+              <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
+                <button class="form-search__btn  form-search__btn--loupe" type="submit">Отправить</button>
                 <label class="field-search">
                   <input class="field-search__input" type="search" name="search" placeholder="Поиск по сайту">
                 </label>
-                <button class="form-search__btn  form-search__btn--loupe" type="submit">Отправить</button>
               </form>
             </li>
             <li class="main-nav__item"><a class="cart  cart--icon" href="#">Корзина: пока пуста</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
       <article class="form-order">
         <header class="form-order__header  form-order__header--bg-grey">
           <h2 class="form-order__title">Вязание на заказ</h2>
+        </header>
+        <div class="container">
           <p class="form-order__descr">
             <small>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</small>
           </p>
-        </header>
-        <div class="form-order__wrapper">
           <form class="form" action="https://echo.htmlacademy.ru" method="GET">
             <fieldset class="fieldset-radio  fieldset-radio--green-style">
               <legend class="fieldset-radio__name">Тип</legend>
@@ -106,19 +108,20 @@
               <input class="field-email__input" type="email" name="email" placeholder="Ваш Email*" required>
             </label>
             <label class="field-text  field-text--green-black-style">
-              <textarea class="field-text__textarea" name="additionally" cols="30" rows="8">Опишите все ваши пожелания к заказу
+              Доп
+              <textarea class="field-text__textarea" name="additionally" rows="6">Опишите все ваши пожелания к заказу
               </textarea>
             </label>
-            <button class="btn">Отправить заказ</button>
-          </form>
-          <p class="form-order__note">
+            <p class="form-order__note">
             <small>*Поля обязательны для заполнения</small>
-          </p>
+            </p>
+            <button class="btn form-order__btn">Отправить заказ</button>
+          </form>
         </div>
       </article>
     </main>
     <footer class="page-footer  page-footer--bg-grey">
-      <div class="page-footer__wrap">
+      <div class="container">
         <div class="social-links">
           <a class="social-btn  social-btn--instagram" href="#">Инстаграм</a>
           <a class="social-btn  social-btn--facebook" href="#">Фэйсбук</a>
@@ -126,7 +129,7 @@
         </div>
         <div class="page-footer__copyright">
           <span>Разработано</span>
-          <a class="page-footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/11" target="_blank"><img src="http://placehold.it/27x34" alt="HTMLAcademy">HTMLAcademy</a>
+          <a class="page-footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/11" target="_blank"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">HTMLAcademy</a>
         </div>
       </div>
     </footer>
