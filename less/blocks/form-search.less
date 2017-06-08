@@ -2,23 +2,49 @@
   position: relative;
 }
 
-.field-search__input {
-  border: none;
-  // Стилизация placeholder;
-}
-
 .form-search__btn {
   position: absolute;
-  top: 2px;
-  left: -43px;
+  top: 5px;
+  left: -45px;
 
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 19px;
   padding: 0;
 
-  text-indent: -1000px;
   background: none;
+  text-indent: -1000px;
   border: none;
   overflow: hidden;
-  outline: 1px solid green;
+}
+
+.form-search__btn--loupe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 19px;
+
+  background-image: url(../../img/icon-search.svg);
+}
+
+@media @tablet-widths {
+
+  .form-search__btn {
+    position: absolute;
+    top: -25px;
+    left: 203px;
+
+    padding: 30px;
+
+    background: none;
+    border-left: 1px solid @lightgrey-color;
+    border-right: 1px solid @lightgrey-color;
+  }
+
+  .form-search__btn--loupe::after {
+    top: 30px;
+    left: 30px;
+  }
 }

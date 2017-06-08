@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка:index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -14,34 +15,39 @@
           <img src="img/logo-mobile.svg" width="86" height="35" alt="logo">
           </a>
         </div>
-        <nav class="main-nav  main-nav--nojs">
-          <span class="main-nav__toggle  main-nav__toggle--open"></span>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
-                <button class="form-search__btn  form-search__btn--loupe" type="submit">Отправить</button>
-                <label class="field-search">
-                  <input class="field-search__input" type="search" name="search" placeholder="Поиск по сайту">
-                </label>
-              </form>
-            </li>
-            <li class="main-nav__item"><a class="cart  cart--icon" href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </nav>
+        <span class="main-nav__toggle main-nav--close"></span>
+        <ul class="main-nav__list1 main-nav--nojs">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list2 main-nav--nojs">
+          <li class="main-nav__item">
+            <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
+              <button class="form-search__btn  form-search__btn--loupe" type="submit">Отправить</button>
+              <label class="field-search">
+                <input class="field-search__input" type="search" name="search" placeholder="Поиск по сайту">
+              </label>
+            </form>
+          </li>
+          <li class="main-nav__item">
+            <a class="cart  cart--icon" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list3">
+          <li class="main-nav__item">Новые поступления</li>
+          <li class="main-nav__item">Распродажа</li>
+        </ul>
+        <p class="main-nav__free-shipping">Бесплатная доставка по России</p>
       </div>
-    </header>
-    <main>
       <section class="promo-block">
         <header class="pomo-block__header  promo-block__header--bg-img">
-          <h2 class="promo-block__title">Милые штуки ручной работы для дома</h2>
+          <h2 class="promo-block__title">Милые штуки ручной<br> работы для дома</h2>
         </header>
-        <div class="container">
+        <div class="promo-block__wrapper">
           <a class="catalog-section-link-1" href="catalog-section-1.html">
             <div class="promo-block__item-1  promo-block__item--table-lamp">
               <h3 class="promo-block__item-title">Предметы интерьера</h3>
@@ -54,6 +60,8 @@
           </a>
         </div>
       </section>
+    </header>
+    <main>
       <section class="product-of-the-week  zigzag-line-bg">
         <div class="container">
           <header class="product-of-the-week__header">
@@ -155,5 +163,6 @@
         <button class="btn  modal-cart__btn ">Добавить</button>
       </div>
     </article>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
