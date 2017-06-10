@@ -13,6 +13,9 @@
 }
 
 @media @tablet-widths {
+  .field-search__input {
+    width: 180px;
+  }
 
   .field-search__input::-webkit-input-placeholder {
   color: @white-color;
@@ -20,5 +23,11 @@
 
 .field-search__input::-moz-placeholder {
   color: @white-color;
+  }
+}
+
+@media @desktop-widths {
+  .field-search__input {
+    width: 90px;
   }
 }

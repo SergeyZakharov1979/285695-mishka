@@ -1,4 +1,5 @@
 .pomo-block__header {
+  margin-top: -17px;
   padding-top: 49px;
   padding-bottom: 98px;
 
@@ -35,6 +36,10 @@
 
   background-color: #63d1bb;
 }
+
+  .promo-block__item-title {
+    width: 100px;
+  }
 
 .promo-block__item--table-lamp::after {
   content: "";
@@ -79,17 +84,22 @@
 @media @tablet-widths {
 
   .promo-block{
+    font-size: 20px;
+    line-height: 30px;
     border-top: 1px solid @lightgrey-color;
-    margin-top: -65px;
+    margin-top: -62px;
   }
 
   .pomo-block__header {
-    padding-top: 135px;
+    margin-top: 0;
+    padding-top: 117px;
+    padding-bottom: 337px;
   }
 
   .promo-block__title {
     font-size: 43px;
     line-height: 50px;
+    letter-spacing: 2.3px;
   }
 
   .promo-block__wrapper {
@@ -101,7 +111,46 @@
 
   .promo-block__item-1,
   .promo-block__item-2 {
-    flex-grow: 2;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
   }
+
+  .promo-block__item-title {
+    width: 100px;
+
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+
+  .promo-block__item--table-lamp::after {
+    top: 30px;
+    right: 35px;
+  }
+
+  .promo-block__item--lego-cube::after {
+    top: 32px;
+    right: 32px;
+  }
+}
+
+@media @desktop-widths {
+
+  .promo-block {
+    margin-top: -57px;
+  }
+
+  .pomo-block__header {
+    padding-top: 110px;
+    padding-bottom: 315px;
+  }
+
+  .promo-block__title {
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: 2.7px;
+  }
+
 }
 
