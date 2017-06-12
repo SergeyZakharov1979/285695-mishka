@@ -109,23 +109,25 @@
           </ul>
         </div>
       </section>
-      <section class="reviews  zigzag-line-bg">
-        <div class="container  reviews--bg-img">
+      <section class="reviews  reviews--bg-img  zigzag-line-bg">
+        <div class="container reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <blockquote class="reviews__item">
             <p class="reviews-item__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews-item__author">Анастасия Красильникова</cite>
-            <p class="reviews-item__author-email"><a href="mailto:@misssssiskras">@misssssiskras</a></p>
+            <div class="reviews-item__wrapper">
+              <cite class="reviews-item__author">Анастасия Красильникова</cite>
+              <p class="reviews-item__author-email"><a href="mailto:@misssssiskras">@misssssiskras</a></p>
+            </div>
+            <div class="reviews__toggle">
+              <button class="reviews__toggle-prev"></button>
+              <button class="reviews__toggle-next"></button>
+            </div>
           </blockquote>
-          <div class="reviews__toggle">
-            <button class="reviews__toggle-prev"></button>
-            <button class="reviews__toggle-next"></button>
-          </div>
-          <a class="btn" href="#">Написать</a>
+          <a class="btn reviews__btn" href="#">Написать</a>
         </div>
       </section>
-      <section class="contacts">
-        <div class="container">
+      <section class="contacts  contacts--pict-flag">
+        <div class="container contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__information">
             <p class="contacts__email">
@@ -134,20 +136,23 @@
             </p>
             <p class="contacts__address">
               <span>адрес:</span>
-              <span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              <span>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
             </p>
           </div>
         </div>
-          <div class="map">
-            <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="map">
-          </div>
-        <div class="container">
-          <a href="#" class="btn">Напишите нам</a>
+        <div class="map">
+
+        </div>
+        <div class="container contacts__wrapper">
+          <a href="#" class="btn contacts__btn">Напишите нам</a>
         </div>
       </section>
     </main>
     <footer class="page-footer  page-footer--bg-grey">
-      <div class="container">
+      <div class="container  page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" width="102" heght="34" alt="footer-logo">
+        </div>
         <div class="social-links">
           <a class="social-btn  social-btn--instagram" href="#">Инстаграм</a>
           <a class="social-btn  social-btn--facebook" href="#">Фэйсбук</a>
@@ -155,17 +160,19 @@
         </div>
         <div class="page-footer__copyright">
           <span>Разработано</span>
-          <a class="page-footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/11" target="_blank"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">HTMLAcademy</a>
+          <a class="page-footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/11" target="_blank">HTMLAcademy</a>
         </div>
       </div>
     </footer>
     <article class="modal-cart">
-      <div class="container">
+      <div class="modal-cart__wrapper">
         <h2 class="modal-cart__title">Добавить в корзину</h2>
         <span class="modal-cart__question">Выберите размер:</span>
-        <span class="modal-cart__size modal-cart__size--active"><a href="#">S</a></span>
-        <span class="modal-cart__size"><a href="#">M</a></span>
-        <span class="modal-cart__size"><a href="#">L</a></span>
+        <div class="modal-cart__inner">
+          <span class="modal-cart__size modal-cart__size--active"><a href="#">S</a></span>
+          <span class="modal-cart__size"><a href="#">M</a></span>
+          <span class="modal-cart__size"><a href="#">L</a></span>
+        </div>
         <button class="btn  modal-cart__btn ">Добавить</button>
       </div>
     </article>
