@@ -1,11 +1,12 @@
 .cart {
-  position: relative;
-
   letter-spacing: 0.75px;
 }
 
-.cart--icon::after {
-  content: "";
+.cart--icon {
+  position: relative;
+
+  &::after {
+    content: "";
 
   position: absolute;
   top: 2px;
@@ -15,4 +16,6 @@
   height: 18px;
 
   background-image: url(../../img/icon-cart.svg);
+  }
+
 }

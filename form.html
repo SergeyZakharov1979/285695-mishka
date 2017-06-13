@@ -11,30 +11,37 @@
       <div class="page-header__wrapper">
         <h1 class="page-header__title">Мишка - интернет-магазин вязаных игрушек</h1><!-- будет скрыт -->
         <div class="page-header__logo">
-          <a href="index.html">
+          <a href="index.html>
           <img src="img/logo-mobile.svg" width="86" height="35" alt="logo">
           </a>
         </div>
-        <nav class="main-nav  main-nav--nojs">
-          <span class="main-nav__toggle  main-nav__toggle--open"></span>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
-                <button class="form-search__btn  form-search__btn--loupe" type="submit">Отправить</button>
-                <label class="field-search">
-                  <input class="field-search__input" type="search" name="search" placeholder="Поиск по сайту">
-                </label>
-              </form>
-            </li>
-            <li class="main-nav__item"><a class="cart  cart--icon" href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </nav>
+        <span class="main-nav__toggle main-nav--close"></span>
+        <ul class="main-nav__list1 main-nav--nojs">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list2 main-nav--nojs">
+          <li class="main-nav__item">
+            <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
+              <button class="form-search__btn  form-search__btn--loupe" type="submit">Отправить</button>
+              <label class="field-search">
+                <input class="field-search__input" type="search" name="search" placeholder="Поиск по сайту">
+              </label>
+            </form>
+          </li>
+          <li class="main-nav__item">
+            <a class="cart  cart--icon" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list3">
+          <li class="main-nav__item">Новые поступления</li>
+          <li class="main-nav__item">Распродажа</li>
+        </ul>
+        <p class="main-nav__free-shipping">Бесплатная доставка по России</p>
       </div>
     </header>
     <main>
@@ -122,7 +129,10 @@
       </article>
     </main>
     <footer class="page-footer  page-footer--bg-grey">
-      <div class="container">
+      <div class="container  page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" width="102" heght="34" alt="footer-logo">
+        </div>
         <div class="social-links">
           <a class="social-btn  social-btn--instagram" href="#">Инстаграм</a>
           <a class="social-btn  social-btn--facebook" href="#">Фэйсбук</a>
@@ -130,7 +140,7 @@
         </div>
         <div class="page-footer__copyright">
           <span>Разработано</span>
-          <a class="page-footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/11" target="_blank"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">HTMLAcademy</a>
+          <a class="page-footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/11" target="_blank">HTMLAcademy</a>
         </div>
       </div>
     </footer>

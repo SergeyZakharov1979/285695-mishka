@@ -1,18 +1,17 @@
 .main-catalog {
-  margin-bottom: 60px;
+  margin-top: -17px;
   padding-bottom: 30px;
 
   font-weight: normal;
   font-size: @font-size-paragraph;
   line-height: 30px;
   color: @darkgrey-color;
-
-  outline: 2px dashed red;
 }
 
 .main-catalog__header {
+  margin-bottom: 30px;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 
   font-weight: bold;
   font-size: 27px;
@@ -23,5 +22,46 @@
 }
 
 .main-catalog__title {
+  margin-top: 10px;
+
   font-size: inherit;
+  letter-spacing: 1.6px;
+}
+
+@media @tablet-widths {
+
+  .main-catalog__header {
+    margin-top: -61px;
+    margin-bottom: 80px;
+    padding-bottom: 43px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    border-top: 1px solid #dfdfdf;
+  }
+
+  .main-catalog__title {
+    margin-top: 34px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .main-catalog {
+    padding-bottom: 105px;
+  }
+
+  .main-catalog__header {
+    margin-top: -57px;
+    margin-bottom: 130px;
+    padding-bottom: 58px;
+  }
+
+  .main-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
 }
