@@ -82,14 +82,14 @@
       padding-bottom: 17px;
       background-color: @white-color;
     }
+  }
 
-    .field-text__input {
-      display: inline-block;
-      width: 340px;
-      margin-top: 0;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+  .field-text__input {
+    display: inline-block;
+    width: 340px;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .field-text .field-text__name {
@@ -117,6 +117,46 @@
 
   .field-text--green-black-style::before {
     content: none;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .field-text__input {
+    display: inline-block;
+    width: 550px;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .field-text {
+    margin-bottom: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-size: 19px;
+    line-height: 19px;
+
+    span {
+      position: relative;
+      top: 2px;
+      z-index: 2;
+
+      display: inline-block;
+      height: 36px;
+      padding-right: 24px;
+      padding-bottom: 17px;
+      background-color: @white-color;
+    }
+  }
+
+  .field-text__textarea {
+    display: inline-block;
+    width: 66.6%;
+    margin-top: -34px;
+    margin-left: 113px;
   }
 
 }
