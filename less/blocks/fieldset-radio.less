@@ -1,18 +1,53 @@
 .fieldset-radio {
   margin: 0;
   padding: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 0;
+  padding-bottom: 22px;
 
   border: none;
-  border-top: 1px solid #63d1bb;
-  outline: 2px dashed green;
 }
 
 .fieldset-radio__name {
-  padding-right: 25px;
+  position: relative;
+  display: block;
+  padding-bottom: 32px;
 
   line-height: 17px;
   text-transform: uppercase;
   color: #63d1bb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 60px;
+
+    width: 199px;
+    height: 1px;
+
+    background-color: #63d1bb;
+  }
+}
+
+@media @tablet-widths {
+
+  .fieldset-radio {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .fieldset-radio__name {
+    padding-top: 48px;
+    padding-bottom: 0;
+    padding-right: 0;
+
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #63d1bb;
+
+    &::after {
+      content: none;
+    }
+  }
+
 }

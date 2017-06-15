@@ -1,18 +1,59 @@
 .fieldset-checkbox {
   margin: 0;
   padding: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 
   border: none;
-  border-top: 1px solid #63d1bb;
-  outline: 2px dashed green;
 }
 
 .fieldset-checkbox__name {
-  padding-right: 25px;
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
 
   line-height: 17px;
   text-transform: uppercase;
   color: #63d1bb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 60px;
+
+    width: 199px;
+    height: 1px;
+
+    background-color: #63d1bb;
+  }
+}
+
+@media @tablet-widths {
+
+  .fieldset-checkbox {
+    padding-bottom: 30px;
+  }
+
+  .fieldset-checkbox--grey-bg {
+    background-color: @grey-color;
+  }
+
+  .fieldset-checkbox__name {
+    padding-top: 67px;
+    padding-bottom: 15px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .fieldset-checkbox__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: -51px;
+    margin-left: 167px;
+  }
+
 }

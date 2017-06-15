@@ -1,7 +1,80 @@
 .field-checkbox {
+  position: relative;
+
   display: block;
+  margin-bottom: 11px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 64px;
 
   line-height: 20px;
+  letter-spacing: 0.7px;
+}
+
+
+.field-checkbox__input {
+  display: none;
+}
+
+.field-checkbox__input+.field-checkbox--indicator {
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid @darkgrey-color;
+}
+
+.field-checkbox__input:checked+.field-checkbox--indicator::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 6px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url(../../img/tick-mobile.png);
+}
+
+@media @tablet-widths {
+
+  .field-checkbox {
+    width: 48%;
+    margin-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    padding-left: 81px;
+
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: 0.7px;
+  }
+
+  .field-checkbox__input+.field-checkbox--indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    width: 54px;
+    height: 53px;
+
+    border: 2px solid @darkgrey-color;
+  }
+
+
+  .field-checkbox__input:checked+.field-checkbox--indicator::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 6px;
+
+    width: 33px;
+    height: 22px;
+
+    background-image: url(../../img/Vector Smart Object.png);
+  }
+
 }

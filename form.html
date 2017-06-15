@@ -11,7 +11,7 @@
       <div class="page-header__wrapper">
         <h1 class="page-header__title">Мишка - интернет-магазин вязаных игрушек</h1><!-- будет скрыт -->
         <div class="page-header__logo">
-          <a href="index.html>
+          <a href="index.html">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="logo">
           </a>
         </div>
@@ -53,85 +53,117 @@
           <p class="form-order__descr">
             <small>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</small>
           </p>
-          <form class="form" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="fieldset-radio  fieldset-radio--green-style">
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="fieldset-radio  fieldset-radio--green-style">
+            <div class="container">
               <legend class="fieldset-radio__name">Тип</legend>
-              <label class="field-radio  field-radio--circle  field-radio--indicator">
+              <label class="field-radio">
                 <input class="field-radio__input" type="radio" name="type" checked>
+                <span class="field-radio--indicator"></span>
                 Аксессуар для интерьера
               </label>
-              <label class="field-radio  field-radio--circle  field-radio--indicator">
+              <label class="field-radio">
                 <input class="field-radio__input" type="radio" name="type">
+                <span class="field-radio--indicator"></span>
                 Детская игрушка
               </label>
-            </fieldset>
-            <fieldset class="fieldset-checkbox  fieldset-checkbox--green-style">
+            </div>
+          </fieldset>
+          <fieldset class="fieldset-checkbox  fieldset-checkbox--green-style  fieldset-checkbox--grey-bg">
+            <div class="container">
               <legend class="fieldset-checkbox__name">Цвет</legend>
-              <label class="field-checkbox  field-checkbox--rect  field-checkbox--indicator">
-                <input class="field-checkbox__input" type="checkbox" name="white" checked>
-                Белый
+              <div class="fieldset-checkbox__wrapper">
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="white" checked>
+                  <span class="field-checkbox--indicator"></span>
+                  Белый
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="grey" checked>
+                  <span class="field-checkbox--indicator"></span>
+                  Серый
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="tiffany">
+                  <span class="field-checkbox--indicator"></span>
+                  &laquo;Тиффани&raquo;
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="black">
+                  <span class="field-checkbox--indicator"></span>
+                  Чёрный
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="pink">
+                  <span class="field-checkbox--indicator"></span>
+                  Розовый
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="orange">
+                  <span class="field-checkbox--indicator"></span>
+                  Оранжевый
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset-text  fieldset-text--green-style">
+            <div class="container">
+              <div class="container">
+                <legend class="fieldset-text__name">ФИО</legend>
+                <div class="fieldset-text__wrap">
+                  <label class="field-text  field-text--black-line">
+                    <span>Имя:</span>
+                    <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" required>
+                  </label>
+                  <label class="field-text  field-text--black-line">
+                    <span>Фамилия:</span>
+                    <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+                  </label>
+                  <label class="field-text  field-text--black-line">
+                    <span>Отчество:</span>
+                    <input class="field-text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <section class="field-text--grey-wrap">
+            <div class="container">
+              <label class="field-tel  field-tel--green-black-style">
+                <span>Тел</span>
+                <input class="field-tel__input" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
               </label>
-              <label class="field-checkbox  field-checkbox--rect  field-checkbox--indicator">
-                <input class="field-checkbox__input" type="checkbox" name="grey" checked>
-                Серый
+              <label class="field-email  field-email--green-black-style">
+                <span>E-mail</span>
+                <input class="field-email__input" type="email" name="email" placeholder="Ваш Email*" required>
               </label>
-              <label class="field-checkbox  field-checkbox--rect  field-checkbox--indicator">
-                <input class="field-checkbox__input" type="checkbox" name="tiffany">
-                &laquo;Тиффани&raquo;
+            </div>
+          </section>
+          <section class="field-text--white-wrap">
+            <div class="container">
+              <label class="field-text  field-text--green-black-style">
+                <span class="field-text__name">Доп</span>
+                <textarea class="field-text__textarea" name="additionally">Опишите все ваши пожелания к заказу
+                </textarea>
               </label>
-              <label class="field-checkbox  field-checkbox--rect  field-checkbox--indicator">
-                <input class="field-checkbox__input" type="checkbox" name="black">
-                Чёрный
-              </label>
-              <label class="field-checkbox  field-checkbox--rect  field-checkbox--indicator">
-                <input class="field-checkbox__input" type="checkbox" name="pink">
-                Розовый
-              </label>
-              <label class="field-checkbox  field-checkbox--rect  field-checkbox--indicator">
-                <input class="field-checkbox__input" type="checkbox" name="orange">
-                Оранжевый
-              </label>
-            </fieldset>
-            <fieldset class="fieldset-text  fieldset-text--green-style">
-              <legend class="fieldset-text__name">ФИО</legend>
-              <label class="field-text  field-text--black-line">
-                Имя:
-                <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" required>
-              </label>
-              <label class="field-text  field-text--black-line">
-                Фамилия:
-                <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
-              </label>
-              <label class="field-text  field-text--black-line">
-                Отчество:
-                <input class="field-text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
-              </label>
-            </fieldset>
-            <label class="field-tel  field-tel--green-black-style">
-              Тел
-              <input class="field-tel__input" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-            </label>
-            <label class="field-email  field-email--green-black-style">
-              E-mail
-              <input class="field-email__input" type="email" name="email" placeholder="Ваш Email*" required>
-            </label>
-            <label class="field-text  field-text--green-black-style">
-              Доп
-              <textarea class="field-text__textarea" name="additionally" rows="6">Опишите все ваши пожелания к заказу
-              </textarea>
-            </label>
-            <p class="form-order__note">
-            <small>*Поля обязательны для заполнения</small>
-            </p>
-            <button class="btn form-order__btn">Отправить заказ</button>
-          </form>
-        </div>
+              <div class="form-order__wrap">
+                <p class="form-order__note">
+                <small>*Поля обязательны для заполнения</small>
+                </p>
+                <button class="btn form-order__btn">Отправить заказ</button>
+              </div>
+            </div>
+          </section>
+        </form>
       </article>
     </main>
     <footer class="page-footer  page-footer--bg-grey">
       <div class="container  page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" width="102" heght="34" alt="footer-logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" width="102" heght="34" alt="footer-logo">
+          </a>
         </div>
         <div class="social-links">
           <a class="social-btn  social-btn--instagram" href="#">Инстаграм</a>
@@ -144,5 +176,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
+

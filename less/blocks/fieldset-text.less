@@ -1,16 +1,67 @@
 .fieldset-text {
-  margin: 0;
   padding: 0;
 
   border: none;
-  border-top: 1px solid #63d1bb;
-  outline: 2px dashed green;
 }
 
 .fieldset-text__name {
-  padding-right: 25px;
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
 
   line-height: 17px;
   text-transform: uppercase;
   color: #63d1bb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 60px;
+
+    width: 199px;
+    height: 1px;
+
+    background-color: #63d1bb;
+  }
+}
+
+@media @tablet-widths {
+
+  .fieldset-text {
+    padding-top: 63px;
+    padding-bottom: 15px;
+  }
+
+  .fieldset-text__name {
+    position: relative;
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 15px;
+
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #63d1bb;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .fieldset-text__wrap {
+    margin-left: 169px;
+    margin-top: -36px;
+  }
+
+  .field-text--grey-wrap {
+    padding-top: 61px;
+    padding-bottom: 49px;
+
+    background-color: @grey-color;
+  }
+
+  .field-text--white-wrap {
+    padding-top: 67px;
+  }
+
 }
