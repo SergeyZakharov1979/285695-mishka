@@ -1,14 +1,33 @@
-.field-search__input [type="search"]{
-  ::-webkit-input-placeholder {
-    color: @black-color;
+.field-search__input {
+  border: none;
+}
+
+.field-search__input::-webkit-input-placeholder {
+  letter-spacing: 0.7px;
+  color: @black-color;
+}
+
+.field-search__input::-moz-placeholder {
+  letter-spacing: 0.7px;
+  color: @black-color;
+}
+
+@media @tablet-widths {
+  .field-search__input {
+    width: 180px;
   }
-  :-moz-placeholder {/*Firefox 18-*/
-    color: @black-color;
+
+  .field-search__input::-webkit-input-placeholder {
+  color: @white-color;
   }
-  ::-moz-placeholder {/*Firefox 19+*/
-    color: @black-color;
+
+.field-search__input::-moz-placeholder {
+  color: @white-color;
   }
-  :-ms-input-placeholder {
-    color: @black-color;
+}
+
+@media @desktop-widths {
+  .field-search__input {
+    width: 90px;
   }
 }

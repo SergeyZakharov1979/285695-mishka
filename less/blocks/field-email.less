@@ -1,22 +1,136 @@
 .field-email {
   display: block;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 
   line-height: 17px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: #63d1bb;
 
-  outline: 2px dashed green;
+  border-bottom: 2px solid @black-color;
+}
+
+.field-email--green-black-style {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 80px;
+
+    width: 179px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 223px;
+
+    width: 32px;
+    height: 21px;
+
+    background-image: url(../../img/mail.png);
+  }
 }
 
 .field-email__input {
   display: block;
-  margin-top: 18px;
+  margin-top: 20px;
 
   font-weight: normal;
   line-height: 20px;
   color: @darkgrey-color;
 
   border: none;
+}
+
+@media @tablet-widths {
+  .field-email {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    span {
+      position: relative;
+      top: 3px;
+      left: -1px;
+      z-index: 2;
+
+      display: inline-block;
+      height: 36px;
+      padding-right: 107px;
+      padding-bottom: 17px;
+      background-color: @grey-color;
+    }
+  }
+
+  .field-email--green-black-style::after {
+    top: 4px;
+    left: 614px;
+  }
+
+  .field-email__input {
+    display: inline-block;
+    width: 474px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 40px;
+
+    font-size: 19px;
+
+    background-color: @grey-color;
+  }
+
+  .field-email--green-black-style::before {
+    content: none;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .field-email {
+    margin-left: 60px;
+    margin-right: 174px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    span {
+      position: relative;
+      top: 3px;
+      z-index: 2;
+
+      display: inline-block;
+      height: 36px;
+      padding-right: 55px;
+      padding-bottom: 17px;
+      background-color: @grey-color;
+    }
+  }
+
+  .field-email--green-black-style::after {
+    top: 5px;
+    left: 779px;
+  }
+
+  .field-email__input {
+    display: inline-block;
+    width: 690px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 40px;
+
+    font-size: 19px;
+
+    background-color: @grey-color;
+  }
+
 }

@@ -1,24 +1,25 @@
 .form-order  {
-  padding-bottom: 20px;
+  padding-bottom: 51px;
 
   font-weight: normal;
   font-size: 13px;
   color: @darkgrey-color;
-
-  outline: 2px dashed red;
 }
 
 .form-order__header {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: -17px;
+  padding-top: 49px;
+  padding-bottom: 51px;
 
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  letter-spacing: 1.4px;
   color: @black-color;
 
   background-color: @grey-color;
+  border-top: 1px solid @lightgrey-color;
 }
 
 .form-order__title {
@@ -26,16 +27,19 @@
 }
 
 .form-order__descr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 25px;
 
-    small {
-      font-size: 13px;
-      line-height: 24px;
-    }
+  small {
+    font-size: 13px;
+    line-height: 24px;
+  }
 }
 
 .form-order__note {
+  margin-top: 15px;
+  margin-bottom: 29px;
+
   small {
     font-weight: normal;
     font-size: 14px;
@@ -46,4 +50,110 @@
 .form-order__btn {
   width: 100%;
   background: none;
+}
+
+@media @tablet-widths {
+
+  .form-order__header {
+    margin-top: -62px;
+    margin-bottom: 73px;
+    padding-top: 57px;
+    padding-bottom: 46px;
+
+    font-size: 43px;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+
+  .form-order__descr {
+    margin-top: 22px;
+    margin-bottom: 25px;
+
+    small {
+      font-size: @font-size;
+      line-height: 30px;
+    }
+  }
+
+  .form-order__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: 12px;
+  }
+
+  .form-order__note {
+    order: 2;
+
+    margin-top: 11px;
+    margin-bottom: 0;
+
+    small {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+
+  .form-order__btn {
+    width: 34.5%;
+    background: none;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .form-order  {
+    padding-bottom: 51px;
+
+    font-weight: normal;
+    font-size: 13px;
+    color: @darkgrey-color;
+  }
+
+  .form-order__header {
+    margin-top: -57px;
+    margin-bottom: 125px;
+    padding-top: 50px;
+    padding-bottom: 57px;
+
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: 2.4px;
+  }
+
+  .form-order__descr {
+    width: 66%;
+    margin-left: 175px;
+    margin-bottom: 24px;
+  }
+
+  .form-order__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 66.6%;
+    margin-left: 113px;
+    padding-top: 10px;
+  }
+
+  .form-order__btn {
+    width: 33%;
+    background: none;
+  }
+
+  .form-order__note {
+    order: 2;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    small {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+
 }

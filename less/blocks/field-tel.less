@@ -1,23 +1,140 @@
 .field-tel {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 21px;
+  padding-bottom: 15px;
 
   line-height: 17px;
   text-transform: uppercase;
   color: #63d1bb;
 
-  outline: 2px dashed green;
   border-bottom: 2px solid @black-color;
 }
 
+.field-tel--green-black-style {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 60px;
+
+    width: 198px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    left: 228px;
+
+    width: 25px;
+    height: 24px;
+
+    background-image: url(../../img/phone.png);
+  }
+}
+
 .field-tel__input {
+  position: relative;
+
   display: block;
-  margin-top: 18px;
+  margin-top: 20px;
 
   font-weight: normal;
   line-height: 20px;
   color: @darkgrey-color;
 
   border: none;
+}
+
+@media @tablet-widths {
+
+  .field-tel {
+    margin-bottom: 35px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    span {
+      position: relative;
+      top: 3px;
+      left: -1px;
+      z-index: 2;
+
+      display: inline-block;
+      height: 36px;
+      padding-right: 137px;
+      padding-bottom: 17px;
+      background-color: @grey-color;
+    }
+  }
+
+  .field-tel__input {
+    display: inline-block;
+    width: 480px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 35px;
+
+    font-size: 19px;
+
+    background-color: @grey-color;
+  }
+
+  .field-tel--green-black-style::before {
+    content: none;
+  }
+
+  .field-tel--green-black-style::after {
+    top: -2px;
+    left: 618px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .field-tel {
+    margin-bottom: 35px;
+    margin-left: 62px;
+    margin-right: 175px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    span {
+      position: relative;
+      top: 3px;
+      z-index: 2;
+
+      display: inline-block;
+      height: 36px;
+      padding-right: 83px;
+      padding-bottom: 17px;
+      background-color: @grey-color;
+    }
+  }
+
+  .field-tel--green-black-style::after {
+    top: -1px;
+    left: 780px;
+  }
+
+  .field-tel__input {
+    display: inline-block;
+    width: 690px;
+    margin-top: 0px;
+    margin-bottom: 14px;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 35px;
+
+    font-size: 19px;
+
+    background-color: @grey-color;
+  }
+
 }
