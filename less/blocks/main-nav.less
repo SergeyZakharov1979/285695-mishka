@@ -16,7 +16,7 @@
   width: 21px;
   height: 20px;
 
-  background-image: url(../../img/icon-menu-close.svg);
+  background-image: url(../img/icon-menu-close.svg);
 }
 
 .main-nav--open {
@@ -26,7 +26,7 @@
   width: 21px;
   height: 14px;
 
-  background-image: url(../../img/icon-menu-open.svg);
+  background-image: url(../img/icon-menu-open.svg);
 }
 
 .main-nav__list1 {
@@ -73,18 +73,44 @@
   border-bottom: 1px solid @lightgrey-color;
   box-sizing: content-box;
 
-    a {
-      text-decoration: none;
-      color: @black-color;
-    }
+  a {
+    text-decoration: none;
+    color: @black-color;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item:nth-child(2) {
   padding-top: 26px;
+
+  &:hover .cart--icon {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active .cart--icon {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list2 .main-nav__item:first-child {
   padding-top: 25px;
+
+  &:hover .form-search--icon-search {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active .form-search--icon-search {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list3 .main-nav__item {
@@ -164,24 +190,30 @@
 
 @media @desktop-widths {
 
+  .main-nav__list1 {
+    order: -2;
+  }
+
   .main-nav__list1 .main-nav__item {
     padding-top: 30px;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
     padding-right: 65px;
 
     font-size: 17px;
   }
 
-  .main-nav__list1 .main-nav__item:last-child {
-    padding-right: 65px;
+  .main-nav__list1 .main-nav__item:first-child {
+    padding-right: 33px;
+    border-right: 1px solid @lightgrey-color;
   }
 
-  .main-nav__list1 {
-    order: -2;
+  .main-nav__list1 .main-nav__item:last-child {
+    padding-left: 35px;
+    padding-right: 50px;
   }
 
   .main-nav__free-shipping {
-    margin-top: 14px;
+    margin-top: 9px;
     margin-bottom: 14px;
   }
 
@@ -195,8 +227,12 @@
     display: block;
     padding-left: 0;
     padding-right: 50px;
-    padding-top: 14px;
+    padding-top: 9px;
     padding-bottom: 14px;
+  }
+
+  .main-nav__list3 .main-nav__item:first-child {
+    padding-right: 57px;
   }
 
 }

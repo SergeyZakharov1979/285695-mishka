@@ -17,16 +17,25 @@
   overflow: hidden;
 }
 
-.form-search__btn--loupe::after {
-  content: "";
+.form-search span {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 6px;
+  left: -44px;
+  cursor: pointer;
+}
 
-  width: 18px;
-  height: 19px;
+.form-search--icon-search {
+  fill: #000000;
+  opacity: 0.3;
 
-  background-image: url(../../img/icon-search.svg);
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media @tablet-widths {
@@ -43,17 +52,27 @@
     border-right: 1px solid @lightgrey-color;
   }
 
-  .form-search__btn--loupe::after {
-    top: 36px;
-    left: 33px;
+  .form-search span {
+    position: absolute;
+    top: 12px;
+    left: 224px;
+    cursor: pointer;
   }
+
 }
 
 @media @desktop-widths {
 
   .form-search__btn {
     top: -25px;
-    left: 97px;
+    left: 68px;
+  }
+
+  .form-search span {
+    position: absolute;
+    top: 11px;
+    left: 99px;
+    cursor: pointer;
   }
 
 }

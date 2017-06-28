@@ -6,16 +6,20 @@
 
 .page-header__logo {
   padding-top: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 17px;
+
+  text-align: center;
+
   border-top: 1px solid @lightgrey-color;
   border-bottom: 1px solid @lightgrey-color;
 
-    img {
-      display: block;
-      width: 86px;
-      height: 35px;
-      margin: 0 auto;
-    }
+  a:hover {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
 }
 
 @media @tablet-widths {
@@ -36,25 +40,29 @@
     order: -2;
 
     margin-right: auto;
-    border: none;
+    padding-top: 22px;
+    padding-bottom: 14px;
 
+    border: none;
 
     img {
       width: 113px;
       height: 46px;
     }
   }
+
 }
 
 @media @desktop-widths {
-
   .page-header__wrapper {
-
+    max-width: 1050px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
     order: -1;
 
+    margin-left: auto;
     padding-top: 10px;
     padding-bottom: 10px;
 

@@ -1,21 +1,35 @@
 .cart {
+  position: relative;
+
   letter-spacing: 0.75px;
 }
 
-.cart--icon {
-  position: relative;
-
-  &::after {
-    content: "";
-
+.cart span {
   position: absolute;
-  top: 2px;
-  left: -51px;
+  top: 4px;
+  left: -46px;
+}
 
-  width: 21px;
-  height: 18px;
+.cart--icon {
+  fill: #000000;
+  opacity: 0.3;
 
-  background-image: url(../../img/icon-cart.svg);
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet-widths {
+
+  .cart span {
+    position: absolute;
+    top: 3px;
+    left: -51px;
   }
 
 }

@@ -1,4 +1,24 @@
 .zigzag-line-bg {
-  border-bottom: 7px solid @grey-color;
-  border-image: url(../../img/zigzag-line-desktop.svg);
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-size: 320px 7px;
+  background-position: -6px 0;
+  background-repeat: repeat-x;
+}
+
+@media @tablet-widths {
+
+  .zigzag-line-bg {
+    background-size: 768px 17px;
+    background-position: 19px 0;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .zigzag-line-bg {
+    background-size: 1050px 23px;
+    background-position: 20px 0;
+  }
+
 }

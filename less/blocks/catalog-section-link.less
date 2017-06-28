@@ -1,6 +1,55 @@
-.catalog-section-link-1,
+.catalog-section-link-1 {
+  text-decoration: none;
+
+  &:hover .promo-block__item-1 {
+    position: relative;
+    top: -5px;
+    margin-bottom: -5px;
+    padding-top: 23px;
+    padding-bottom: 18px;
+  }
+
+  &:active .promo-block__item-1 {
+    position: static;
+    margin-bottom: 0px;
+    padding-top: 23px;
+    padding-bottom: 13px;
+  }
+
+  &:active .promo-block__item-title {
+    opacity: 0.3;
+  }
+
+  &:active .promo-block__item--table-lamp {
+    opacity: 0.3;
+  }
+}
+
 .catalog-section-link-2 {
   text-decoration: none;
+
+  &:hover .promo-block__item-2 {
+    position: relative;
+    top: -5px;
+    margin-bottom: -5px;
+    padding-top: 21px;
+    padding-bottom: 22px;
+  }
+
+  &:active .promo-block__item-2 {
+    position: static;
+    margin-bottom: 0px;
+    padding-top: 21px;
+    padding-bottom: 17px;
+  }
+
+  &:active .promo-block__item-title {
+    opacity: 0.3;
+  }
+
+  &:active .promo-block__item--lego-cube {
+    opacity: 0.3;
+  }
 }
 
 @media @tablet-widths {
@@ -9,12 +58,84 @@
     flex-basis: 334px;
     flex-shrink: 0;
     flex-grow: 1;
+
+    &:hover .promo-block__item-1 {
+      position: relative;
+      top: -5px;
+      margin-bottom: -5px;
+      padding-top: 32px;
+      padding-bottom: 24px;
+    }
+
+    &:active .promo-block__item-1 {
+      position: static;
+      margin-bottom: 0px;
+      padding-bottom: 30px;
+    }
   }
 
   .catalog-section-link-2 {
     flex-basis: 334px;
     flex-shrink: 0;
     flex-grow: 1;
+
+    &:hover .promo-block__item-2 {
+      position: relative;
+      top: -5px;
+      margin-bottom: -5px;
+      padding-top: 32px;
+      padding-bottom: 24px;
+    }
+
+    &:active .promo-block__item-2 {
+      position: static;
+      margin-bottom: 0px;
+      padding-bottom: 30px;
+    }
+  }
+
+}
+
+@media @desktop-widths {
+
+  .catalog-section-link-1 {
+    flex-basis: 334px;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    &:hover .promo-block__item-1 {
+      position: relative;
+      top: -5px;
+      margin-bottom: -5px;
+      padding-top: 32px;
+      padding-bottom: 35px;
+    }
+
+    &:active .promo-block__item-1 {
+      position: static;
+      margin-bottom: 0px;
+      padding-bottom: 35px;
+    }
+  }
+
+  .catalog-section-link-2 {
+    flex-basis: 334px;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    &:hover .promo-block__item-2 {
+      position: relative;
+      top: -5px;
+      margin-bottom: -5px;
+      padding-top: 32px;
+      padding-bottom: 35px;
+    }
+
+    &:active .promo-block__item-2 {
+      position: static;
+      margin-bottom: 0px;
+      padding-bottom: 35px;
+    }
   }
 
 }
