@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 22px;
+  padding-top: 25px;
   padding-bottom: 23px;
 
   font-size: 19px;
@@ -16,11 +16,9 @@
   display: flex;
   justify-content: space-around;
 
-  width: auto;
-
-  padding-top: 23px;
-  padding-right: 22px;
-  padding-left: 20px;
+  padding-top: 19px;
+  padding-right: 31px;
+  padding-left: 24px;
 
   font-size: 19px;
   line-height: 19px;
@@ -30,32 +28,31 @@
 
   span {
     display: inline-block;
-    padding-top: 5px;
+    padding-top: 9px;
   }
 }
 
-.page-footer__copyright-link {
-  position: relative;
-
+.page-footer__copyright--link {
   display: inline-block;
   width: 27px;
   height: 34px;
 
-  text-decoration: none;
-  text-indent: -1000px;
-  overflow: hidden;
+  span {
+    text-indent: -1000px;
+    overflow: hidden;
+    font-size: 0;
+  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  svg {
+    fill: #63d1bb;
 
-    width: 27px;
-    height: 34px;
+    &:hover {
+      fill: #46c1ae;
+    }
 
-    background-image: url(../../img/htmlacademy.svg);
-    background-repeat: no-repeat;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -74,9 +71,12 @@
     display: block;
     margin-right: 75px;
 
-    img {
-      width: 102px;
-      height: 34px;
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -87,11 +87,11 @@
     margin: 0;
     padding-top: 3px;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 7px;
     border-top: none;
 
     span {
-      padding-top: 7px;
+      padding-top: 9px;
     }
   }
 }

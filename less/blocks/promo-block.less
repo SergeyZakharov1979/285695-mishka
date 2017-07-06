@@ -1,12 +1,13 @@
 .pomo-block__header {
   margin-top: -22px;
+  margin-bottom: 122px;
 
   font-size: 27px;
   line-height: 30px;
 }
 
-.promo-block__header--bg-img {
-  height: 281px;
+.promo-block--bg-img {
+  min-height: 281px;
 
   background-color: #fafafa;
   background-image: url(../img/hero-mobile@1x.jpg);
@@ -15,7 +16,7 @@
   background-repeat: no-repeat;
 }
 
-@media @retina {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .promo-block__header--bg-img {
     background-image: url(../img/hero-mobile@2x.jpg);
   }
@@ -36,7 +37,7 @@
   display: flex;
   justify-content: space-between;
 
-  padding-top: 23px;
+  padding-top: 22px;
   padding-bottom: 13px;
   padding-left: 30px;
   padding-right: 37px;
@@ -91,32 +92,37 @@
 @media @tablet-widths {
 
   .promo-block{
+    margin-top: -62px;
+    margin-bottom: 25px;
+
     font-size: 20px;
     line-height: 30px;
-    border-top: 1px solid @lightgrey-color;
-    margin-top: -62px;
   }
 
   .pomo-block__header {
     margin-top: -36px;
+    margin-bottom: 372px;
+
+    border-top: 1px solid @lightgrey-color;
   }
 
-  .promo-block__header--bg-img {
-    height: 625px;
+  .promo-block--bg-img {
+    min-height: 625px;
 
     background-image: url(../img/hero-desktop@1x.jpg);
-    background-position: center -2px;
-    background-size: 1150px;
+    background-position: center 0;
+    background-size: 1150px 746px;
+    background-repeat: no-repeat;
   }
 
   @media @retina {
-    .promo-block__header--bg-img {
+    .promo-block--bg-img {
       background-image: url(../img/hero-desktop@2x.jpg);
     }
   }
 
   .promo-block__title {
-    padding-top: 153px;
+    padding-top: 117px;
 
     font-size: 43px;
     line-height: 50px;
@@ -124,12 +130,25 @@
   }
 
   .promo-block__wrapper {
+    position: relative;
     display: flex;
     min-width: 668px;
-    max-width: 1050px;
     margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .promo-block__wrapper-zigzag-bg {
+    position: absolute;
+    top: 108px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-position: 0 bottom;
+    background-size: 768px 24px;
+    background-repeat: repeat-x;
   }
 
   .promo-block__item-1,
@@ -139,11 +158,6 @@
     padding-bottom: 30px;
     padding-left: 35px;
     padding-right: 35px;
-
-    background-image: url(../img/bg-zigzag-fill.svg);
-    background-position: 0 109px;
-    background-size: 768px 24px;
-    background-repeat: repeat-x;
   }
 
   .promo-block__item-1 {
@@ -175,20 +189,25 @@
 @media @desktop-widths {
 
   .promo-block {
-    margin-top: -56px;
-    border-top: 1px solid @lightgrey-color;
+    margin-top: -57px;
+    margin-bottom: 3px;
+  }
+
+  .promo-block--bg-img {
+    background-size: 1252px 746px;
+    background-position: center 0;
   }
 
   .pomo-block__header {
+    max-width: 1150px;
     margin-top: 0px;
+    margin-bottom: 361px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 108px;
-    padding-bottom: 315px;
-  }
+    padding-bottom: 0;
 
-  .promo-block__header--bg-img {
-    background-position: center -3px;
-
-    background-size: 1250px 746px;
+    border-top: 1px solid @lightgrey-color;
   }
 
   .promo-block__title {
@@ -205,20 +224,29 @@
     padding-right: 0;
   }
 
-  .promo-block__item-1 {
-    padding-bottom: 33px;
+  .promo-block__wrapper-zigzag-bg {
+    position: absolute;
+    top: 101px;
+    left: 0;
+    width: 100%;
+    height: 37px;
 
-    background-position: 22.5% 103%;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-position: 13px bottom;
     background-size: 1252px auto;
     background-repeat: repeat-x;
   }
 
-  .promo-block__item-2 {
-    padding-bottom: 35px;
+  .promo-block__item-1 {
+    max-width: 525px;
+    margin-left: auto;
+    padding-bottom: 33px;
+  }
 
-    background-position: 17.3% 103%;
-    background-size: 1252px auto;
-    background-repeat: repeat-x;
+  .promo-block__item-2 {
+    max-width: 525px;
+    margin-right: auto;
+    padding-bottom: 35px;
   }
 
 }

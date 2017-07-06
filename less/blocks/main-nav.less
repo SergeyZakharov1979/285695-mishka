@@ -30,19 +30,34 @@
 }
 
 .main-nav__list1 {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 5;
+
   display: none;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  background-color: #fff;
 }
 
 .main-nav__list2 {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  z-index: 5;
+
   display: none;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+  background-color: #fff;
 }
 
 .main-nav__list1.main-nav--nojs {
@@ -133,9 +148,13 @@
   }
 
   .main-nav__list1{
+    position: static;
     display: flex;
+    width: auto;
     margin-right: auto;
     z-index: 2;
+
+    background-color: transparent;
   }
 
   .main-nav__list1 .main-nav__item {
@@ -151,14 +170,21 @@
 
   .main-nav__list1 .main-nav__item:last-child {
     padding-right: 81px;
+
+    a {
+      letter-spacing: 0.6px;
+    }
   }
 
   .main-nav__list2{
+    position: static;
     display: flex;
-
     order: -1;
+    width: auto;
     margin-left: auto;
     z-index: 2;
+
+    background-color: transparent;
   }
 
   .main-nav__list2 .main-nav__item {
