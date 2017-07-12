@@ -1,6 +1,6 @@
 .main-catalog {
   margin-top: -17px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   font-weight: normal;
   font-size: @font-size-paragraph;
@@ -30,15 +30,26 @@
 
 @media @tablet-widths {
 
+  .main-catalog {
+    padding-bottom: 30px;
+  }
+
   .main-catalog__header {
     margin-top: -61px;
-    margin-bottom: 80px;
-    padding-bottom: 43px;
+    margin-bottom: 68px;
+    padding-bottom: 55px;
 
     font-size: 43px;
     line-height: 50px;
 
     border-top: 1px solid #dfdfdf;
+  }
+
+  .main-catalog__header--zigzag-bg {
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: left 212px;
+    background-size: 768px 24px;
   }
 
   .main-catalog__title {
@@ -50,13 +61,20 @@
 @media @desktop-widths {
 
   .main-catalog {
-    padding-bottom: 105px;
+    padding-bottom: 72px;
   }
 
   .main-catalog__header {
     margin-top: -57px;
-    margin-bottom: 130px;
-    padding-bottom: 58px;
+    margin-bottom: 112px;
+    padding-bottom: 75px;
+  }
+
+  .main-catalog__header--zigzag-bg {
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: left 236px;
+    background-size: 1150px 34px;
   }
 
   .main-catalog__title {
