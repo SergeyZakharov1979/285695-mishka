@@ -1,5 +1,5 @@
 .form-order  {
-  padding-bottom: 51px;
+  padding-bottom: 55px;
 
   font-weight: normal;
   font-size: 13px;
@@ -8,8 +8,8 @@
 
 .form-order__header {
   margin-top: -17px;
-  padding-top: 49px;
-  padding-bottom: 51px;
+  padding-top: 48px;
+  padding-bottom: 52px;
 
   font-weight: bold;
   font-size: 27px;
@@ -28,7 +28,7 @@
 
 .form-order__descr {
   margin-top: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   small {
     font-size: 13px;
@@ -53,6 +53,10 @@
 }
 
 @media @tablet-widths {
+  
+  .form-order {
+    padding-bottom: 50px;
+  }
 
   .form-order__header {
     margin-top: -62px;
@@ -63,6 +67,13 @@
     font-size: 43px;
     line-height: 50px;
     letter-spacing: 2px;
+  }
+
+  .form-order__header--zigzag-bg {
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: left 212px;
+    background-size: 768px 24px;
   }
 
   .form-order__descr {
@@ -80,7 +91,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    padding-top: 12px;
+    padding-top: 13px;
   }
 
   .form-order__note {
@@ -105,7 +116,7 @@
 @media @desktop-widths {
 
   .form-order  {
-    padding-bottom: 51px;
+    padding-bottom: 50px;
 
     font-weight: normal;
     font-size: 13px;
@@ -121,6 +132,13 @@
     font-size: 53px;
     line-height: 57px;
     letter-spacing: 2.4px;
+  }
+
+  .form-order__header--zigzag-bg {
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: left 236px;
+    background-size: 1150px 34px;
   }
 
   .form-order__descr {

@@ -16,7 +16,17 @@
   display: none;
 }
 
-.field-checkbox__input+.field-checkbox--indicator {
+.field-checkbox--indicator-active {
+  position: absolute;
+  top: 17px;
+  left: 9px;
+
+  display: none;
+  width: 22px;
+  height: 16px;
+}
+
+.field-checkbox__input ~ .field-checkbox--indicator {
   position: absolute;
   top: 4px;
   left: 0;
@@ -25,18 +35,18 @@
   height: 40px;
 
   border: 2px solid @darkgrey-color;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
 }
 
-.field-checkbox__input:checked+.field-checkbox--indicator::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 6px;
-
-  width: 22px;
-  height: 16px;
-
-  background-image: url(../../img/tick-mobile.png);
+.field-checkbox__input:checked + .field-checkbox--indicator-active {
+  display: block;
 }
 
 @media @tablet-widths {
@@ -53,7 +63,7 @@
     letter-spacing: 0.7px;
   }
 
-  .field-checkbox__input+.field-checkbox--indicator {
+  .field-checkbox__input ~ .field-checkbox--indicator {
     position: absolute;
     top: 2px;
     left: 0;
@@ -65,16 +75,13 @@
   }
 
 
-  .field-checkbox__input:checked+.field-checkbox--indicator::after {
-    content: "";
+  .field-checkbox__input:checked + .field-checkbox--indicator-active {
     position: absolute;
-    top: 0px;
-    left: 6px;
+    top: 19px;
+    left: 11px;
 
     width: 33px;
     height: 22px;
-
-    background-image: url(../../img/Vector Smart Object.png);
   }
 
 }
